@@ -7,4 +7,6 @@ resource "aws_ssm_parameter" "first_resource" {
   value = "Hello Terraform!"
 }
 
-
+resource "random_pet" "name" {
+  length=2
+}
