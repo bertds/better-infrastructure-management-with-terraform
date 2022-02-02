@@ -1,6 +1,6 @@
 locals {
   ip_addresses = [] # TO DO: provide a list of IP addresses that should be able to SSH into your notebook
-  name         = "" # TO DO: fill in the name of your notebook
+  name         = "bert" # TO DO: fill in the name of your notebook
 }
 
 

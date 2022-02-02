@@ -1,9 +1,11 @@
-variable "ip_addresses" {
-  
-}
-
 variable "instance_type" {
-  
+  type = string
 }
  
-# Complete the set of input variables of the module 
+variable "notebook_name" {
+  type = string
+}
+
+variable "ip_addresses" {
+  type    = list(string)
+}
