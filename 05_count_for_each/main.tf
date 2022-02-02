@@ -10,6 +10,7 @@ locals {
 }
 
 module "secure_notebooks" {
+  bert = "bds"
   count = length(local.Users)
   source        = "./secure_notebook"
   ip_address    = local.IP[count.index]
@@ -18,6 +19,7 @@ module "secure_notebooks" {
 }
 
 module "secure_notebooks2" {
+  bert = "bds"
   for_each = local.User_set
   source        = "./secure_notebook"
   ip_address    = local.IP[index(local.Users, each.key)]

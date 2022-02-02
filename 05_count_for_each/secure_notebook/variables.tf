@@ -13,3 +13,9 @@ variable "ip_address" {
   type        = string
   description = "ip address to which ingress traffic is limited"
 }
+
+variable "bert" {
+  type        = string
+  description = "ip address to which ingress traffic is limited"
+}
+
