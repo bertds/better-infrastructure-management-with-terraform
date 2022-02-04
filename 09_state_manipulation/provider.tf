@@ -9,7 +9,7 @@ terraform {
   // TO DO: change $yourname by your own name!
   backend "s3" {
     bucket = "better-infrastructure-management-with-terraform"
-    key    = "state_manipulation/$yourname/terraform.tfstate"
+    key    = "state_manipulation/bert/terraform.tfstate"
     region = "eu-west-1"
     profile = "academy"
   }
